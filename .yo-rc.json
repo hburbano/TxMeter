@@ -1,0 +1,17 @@
+{
+  "generator-m": {
+    "answers": {
+      "appName": "TxMeter",
+      "appId": "co.bbox.txmeter",
+      "bowerPackages": [],
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "plugins": [
+        "cordova-plugin-device"
+      ],
+      "appModule": "TxMeter"
+    }
+  }
+}
