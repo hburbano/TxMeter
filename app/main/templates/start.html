@@ -3,10 +3,10 @@
     <div class="list card">
 
       <a href="#" class="item item-icon-left">
-        <i class="icon ion-cash"></i>
+        <i class="icon ion-android-car"></i>
          Recorrido
         <span class="item-note">
-          $0.0
+          {{metros | number:0}} m
         </span>
       </a>
 
@@ -14,20 +14,20 @@
         <i class="icon ion-clock"></i>
           Unidades
         <span class="item-note">
-          17
+          {{unidades | number:0}}
         </span>
       </a>
 
       <a href="#" class="item item-icon-left">
         <i class="icon ion-cash"></i>
-          Unidades
+          Costo Carrera
         <span class="item-note">
-          $0.0
+          $ {{valor | number:1}}
         </span>
       </a>
-      <a class="item item-icon-right assertive" href="#">
+      <a ng-class="!run ? 'item item-icon-right balanced' : 'item item-icon-right assertive'" ng-click='StartStop()'>
         <i class="icon ion-play"></i>
-        Iniciar recorrido
+        {{msg}}
       </a>
 
     </div>
